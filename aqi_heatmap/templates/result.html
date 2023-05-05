@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Air Quality Prediction Result</title>
+    {{ map_data|safe }}
+  </head>
+  <body>
+    <h1>Air Quality Prediction Result</h1>
+    <div id="map"></div>
+    <script>
+        var map_div = document.getElementById('map');
+        map_div.innerHTML = "{{ map_data|safe }}";
+    </script>
+  </body>
+</html>
